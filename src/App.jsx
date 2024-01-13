@@ -1,16 +1,16 @@
-import About from "./layouts/About"
-import Feetback from "./layouts/Feetback"
-import Footer from "./layouts/Footer"
-import Header from "./layouts/Header"
-import Home from "./layouts/Home"
-import Projects from "./layouts/Projects"
-import Services from "./layouts/Services"
-import Team from "./layouts/Team"
-import './global.css'
+import About from './layouts/About';
+import Feetback from './layouts/Feetback';
+import Footer from './layouts/Footer';
+import Header from './layouts/Header';
+import Home from './layouts/Home';
+import Projects from './layouts/Projects';
+import Services from './layouts/Services';
+import Team from './layouts/Team';
+import './global.scss';
 
 function App() {
   return (
-    <div>
+    <div className='wrapper'>
       <Header />
       <main>
         <Home />
@@ -22,7 +22,7 @@ function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
