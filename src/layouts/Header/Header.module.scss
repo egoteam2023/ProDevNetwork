@@ -5,13 +5,15 @@
     align-items: center;
     gap: 100px;
     li:first-child {
-      margin-right: 250px;
+      margin-right: 230px;
     }
   }
   a {
+    font-family: 'Gilroy-Regular';
     color: #fff;
     font-size: 24px;
     transition: 0.3s;
+    letter-spacing: 2.4px;
     &:hover {
       color: #5064af;
     }

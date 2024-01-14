@@ -8,16 +8,72 @@
     gap: 100px;
 
     .name {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 35px;
+      position: relative;
+      .loadingPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        .svgContainer {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          .svg {
+            stroke: white;
+            fill: #fff;
+            stroke-width: 1px;
+            stroke-dasharray: 4500;
+            animation: draw 8s ease;
+          }
 
-      p {
-        font-size: 63.437px;
-        font-weight: 400;
-        letter-spacing: 88.177px;
-        margin-right: -88px;
+          @keyframes draw {
+            0% {
+              fill-opacity: 0;
+              stroke-dashoffset: 4500;
+            }
+            100% {
+              stroke-dashoffset: 0;
+              fill-opacity: 1.5;
+            }
+          }
+
+          .middleSvg {
+            .svg2 {
+              position: relative;
+              z-index: -1;
+              margin: 0 0 -1px -30px;
+              stroke: #5065af;
+              fill: #5065af;
+              stroke-width: 1px;
+              stroke-dasharray: 4500;
+              animation: draw 8s ease;
+            }
+
+            @keyframes draw {
+              0% {
+                fill-opacity: 0;
+                stroke-dashoffset: 4500;
+              }
+              100% {
+                stroke-dashoffset: 0;
+                fill-opacity: 1.5;
+              }
+            }
+          }
+        }
+      }
+
+      .nameContainer {
+        height: 70px;
+        overflow: hidden;
+
+        .team {
+          font-size: 63.437px;
+          font-weight: 400;
+          letter-spacing: 88.177px;
+          margin-right: -88px;
+        }
       }
     }
 
@@ -27,15 +83,16 @@
       align-items: center;
       gap: 40px;
       p {
+        font-family: 'Gilroy-Medium';
         color: #dbdbdb;
         text-align: center;
         font-size: 18px;
-        font-weight: 500;
         letter-spacing: 1.8px;
         max-width: 878px;
       }
 
       button {
+        font-family: 'Gilroy-Medium';
         position: relative;
         overflow: hidden;
         padding: 10px 94px;
@@ -52,13 +109,13 @@
         &:before {
           content: '';
           width: 0;
-          height: 800%;
+          height: 1000%;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%) rotate(45deg);
           background: #fff;
-          transition: .8s ease;
+          transition: 0.8s ease;
           display: block;
           z-index: -1;
         }
