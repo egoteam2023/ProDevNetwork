@@ -4,26 +4,6 @@ import ego from '../../assets/img/ego.png';
 import gsap from 'gsap';
 
 const Home = () => {
-  // const loadingPageRef = useRef(null);
-
-  // useEffect(() => {
-  //   const loadingPage = loadingPageRef.current;
-
-  //   const animation = gsap.fromTo(
-  //     loadingPage,
-  //     { opacity: 1 },
-  //     {
-  //       // opacity: 0,
-  //       // display: 'none',
-  //       duration: 1.5,
-  //       delay: 3.5,
-  //     },
-  //   );
-
-  //   // Опционально: Очистить анимацию при размонтировании компонента
-  //   return () => animation.kill();
-  // }, []);
-
   const sloganRef = useRef(null);
 
   useLayoutEffect(() => {
