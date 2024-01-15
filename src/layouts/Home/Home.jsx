@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import style from './Home.module.scss';
-import ego from '../../assets/img/ego.png';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 
 const Home = () => {
   const sloganRef = useRef(null);
@@ -16,7 +16,7 @@ const Home = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 2,
+        duration: 1,
         delay: 0.5,
       },
     );

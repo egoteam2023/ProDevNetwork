@@ -149,3 +149,17 @@ body {
   min-height: 100vh;
   background: url('./assets/img/bg.png') 0 0 / cover no-repeat;
 }
+
+[class*='__title'] {
+  h2 {
+    color: #fff;
+    font-family: 'Gilroy-Medium';
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 8px;
+  }
+}
+
+.br {
+  height: 160px;
+}

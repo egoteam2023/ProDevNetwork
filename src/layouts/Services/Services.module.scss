@@ -1,0 +1,39 @@
+.services_list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &_decore {
+    color: #ffffff1e;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -30%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 249.33px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 24.933px;
+  }
+}
+
+.wrapper {
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 62px;
+}
+.services_title {
+  color: #fff;
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 8px;
+}

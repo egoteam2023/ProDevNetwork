@@ -1,0 +1,60 @@
+.service {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+
+  &_id {
+    font-family: 'Gilroy-Black';
+    border-radius: 16px 0px 0px 16px;
+    background-color: #fff;
+    width: 20%;
+    padding: 20px 25px 20px 54px;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gilroy;
+    font-size: 128px;
+    font-weight: 900;
+    letter-spacing: 12.8px;
+  }
+
+  &_descr {
+    padding: 34px 84px 34px 34px;
+    width: 80%;
+    border-radius: 0px 16px 16px 0px;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #111;
+  }
+
+  &_title {
+    color: #fff;
+
+    font-family: Gilroy;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2.3px;
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &_list {
+      margin-left: 20px;
+      list-style-type: circle;
+      color: #fff;
+      font-family: Gilroy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.8px;
+    }
+  }
+}

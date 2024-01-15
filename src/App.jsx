@@ -10,15 +10,21 @@ import './global.scss';
 
 function App() {
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <Header />
       <main>
         <Home />
+        <div className="br"></div>
         <About />
+        <div className="br"></div>
         <Team />
+        <div className="br"></div>
         <Services />
+        <div className="br"></div>
         <Projects />
+        <div className="br"></div>
         <Feetback />
+        <div className="br"></div>
       </main>
       <Footer />
     </div>

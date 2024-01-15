@@ -1,0 +1,70 @@
+.team {
+  padding: clamp(70px, 10vw, 150px) 0 clamp(40px, 10vw, 70px);
+
+  &_title {
+    text-align: center;
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 60px;
+  }
+
+  &_slider_block {
+    position: relative;
+
+    .team_decore {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      top: -40%;
+      position: absolute;
+      color: #ffffff1e;
+      font-family: Gilroy;
+      font-size: 283.33px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 28.333px;
+    }
+  }
+
+  &_slide {
+    height: 40%;
+    display: flex;
+    color: #fff;
+    gap: 15px;
+
+    .team_image {
+      object-fit: cover;
+      width: 40%;
+      border-radius: 25px;
+      background: #111;
+    }
+
+    .team_info {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      padding: 20px clamp(20px, 5vw, 60px) 20px clamp(30px, 5vw, 100px);
+      width: 60%;
+      border-radius: 25px;
+      background: #111;
+
+      &_name {
+        font-size: clamp(20px, 5vw, 26px);
+      }
+
+      &_about {
+        font-size: clamp(14px, 5vw, 18px);
+      }
+
+      &_specialize {
+        font-weight: 700;
+        font-size: clamp(16px, 3vw, 20px);
+      }
+    }
+  }
+}
