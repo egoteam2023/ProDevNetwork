@@ -35,16 +35,6 @@
       display: flex;
       align-items: center;
       gap: 30px;
-<<<<<<< HEAD
-      justify-content: center;
-      padding: 20px clamp(20px, 5vw, 60px) 20px clamp(30px, 5vw, 100px);
-      width: 60%;
-      border-radius: 25px;
-      background: #111;
-      font-family: 'Gilroy-regular';
-      &_name {
-        font-size: clamp(20px, 5vw, 26px);
-=======
       .image_wrapper {
         flex: 4;
         border-radius: 25px;
@@ -57,7 +47,6 @@
           height: 100%;
           object-fit: cover;
         }
->>>>>>> develop
       }
 
       .team_info {
