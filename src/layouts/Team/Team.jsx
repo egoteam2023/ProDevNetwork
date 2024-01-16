@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Team.module.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 
