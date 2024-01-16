@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './Team.module.scss'
+import React from 'react';
+import styles from './Team.module.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -8,43 +8,50 @@ import 'swiper/css';
 const Team = () => {
   const team = [
     {
-      image: 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg',
+      image:
+        'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg',
       name: 'Firstname Lastname',
-      about: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia.',
-      specialize: 'JavaScript, Node.JS, Sass, Bootstrap'
+      about:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia.',
+      specialize: 'JavaScript, Node.JS, Sass, Bootstrap',
     },
     {
-      image: 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg',
+      image:
+        'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg',
       name: 'Firstname Lastname',
-      about: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia.',
-      specialize: 'JavaScript, Node.JS, Sass, Bootstrap'
+      about:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia.',
+      specialize: 'JavaScript, Node.JS, Sass, Bootstrap',
     },
     {
-      image: 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg',
+      image:
+        'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg',
       name: 'Firstname Lastname',
-      about: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia.',
-      specialize: 'JavaScript, Node.JS, Sass, Bootstrap'
+      about:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia.',
+      specialize: 'JavaScript, Node.JS, Sass, Bootstrap',
     },
     {
-      image: 'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg',
+      image:
+        'https://st4.depositphotos.com/14953852/24787/v/450/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg',
       name: 'Firstname Lastname',
-      about: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia.',
-      specialize: 'JavaScript, Node.JS, Sass, Bootstrap'
-    }
-  ]
+      about:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat unde quod repellat tenetur tempore. Nobis blanditiis nemo qui. Placeat rerum ad natus doloremque fuga qui eius aspernatur quaerat officia.',
+      specialize: 'JavaScript, Node.JS, Sass, Bootstrap',
+    },
+  ];
   return (
-    <div className='team__container'>
+    <div className="team__container">
       <div className={styles.team}>
         <h2 className={styles.team_title}>команда</h2>
         <div className={styles.team_slider_block}>
           <p className={styles.team_decore}>команда</p>
-        <Swiper
-          slidesPerView={1}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          {
-            team.map(el =>
+          <Swiper
+            slidesPerView={1}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            {team.map((el) => (
               <SwiperSlide>
                 <div className={styles.team_slide}>
                   <img className={styles.team_image} src={el.image} alt="" />
@@ -54,17 +61,13 @@ const Team = () => {
                     <p className={styles.team_info_specialize}>{el.specialize}</p>
                   </div>
                 </div>
-
               </SwiperSlide>
-            )
-          }
-
-        </Swiper>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Team
+export default Team;
