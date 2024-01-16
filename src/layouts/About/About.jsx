@@ -16,7 +16,6 @@ const About = () => {
       },
     });
     timeline
-
       .fromTo(
         `.${styles.bg_decore}`,
         { opacity: 0, color: '#fff' },

@@ -30,38 +30,49 @@
 
   &_slide {
     height: 40%;
-    display: flex;
     color: #fff;
-    gap: 15px;
-
-    .team_image {
-      object-fit: cover;
-      width: 40%;
-      border-radius: 25px;
-      background: #111;
-    }
-
-    .team_info {
+    .slide_wrapper {
       display: flex;
-      flex-direction: column;
+      align-items: center;
       gap: 30px;
-      justify-content: center;
-      padding: 20px clamp(20px, 5vw, 60px) 20px clamp(30px, 5vw, 100px);
-      width: 60%;
-      border-radius: 25px;
-      background: #111;
-
-      &_name {
-        font-size: clamp(20px, 5vw, 26px);
+      .image_wrapper {
+        flex: 4;
+        border-radius: 25px;
+        overflow: hidden;
+        min-width: 400px;
+        height: 460px;
+        background: #111;
+        .team_image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
 
-      &_about {
-        font-size: clamp(14px, 5vw, 18px);
-      }
+      .team_info {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        padding: 20px clamp(20px, 5vw, 60px) 20px clamp(30px, 5vw, 100px);
+        width: 100%;
+        height: 460px;
+        border-radius: 25px;
+        background: #111;
 
-      &_specialize {
-        font-weight: 700;
-        font-size: clamp(16px, 3vw, 20px);
+        &_name {
+          font-size: clamp(20px, 5vw, 26px);
+        }
+
+        &_about {
+          font-size: clamp(14px, 5vw, 18px);
+        }
+
+        &_specialize {
+          font-weight: 700;
+          font-size: clamp(16px, 3vw, 20px);
+        }
       }
     }
   }
