@@ -1,0 +1,21 @@
+
+projectCard__img
+
+.project-card {
+   font-family: 'Gilroy-Regular';
+   
+   &__img {
+      
+   }
+   &__name {
+      text-align: center;
+      font-size: 28px;
+      color: white;
+
+   }
+   &__price {
+      text-align: center;
+      font-size: 20px;
+      color: green;
+   }
+}
