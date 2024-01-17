@@ -1,0 +1,26 @@
+.projectsContainer {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   grid-gap: 10px;
+
+   .projectCard1 { grid-area: 1 / 1 / 4 / 3; background-color: #f00;}
+   .projectCard2 { grid-area: 1 / 3 / 2 / 6; background-color: #00f;}
+   .projectCard3 { grid-area: 1 / 6 / 2 / 9; background-color: #0f0;}
+   .projectCard4 { grid-area: 2 / 3 / 3 / 5; background-color: #f00; }
+   .projectCard5 { grid-area: 2 / 5 / 3 / 7; background-color: #0f0; }
+   .projectCard6 { grid-area: 2 / 7 / 2 / 9; background-color: #00f; }
+      
+   .projectCard1,
+   .projectCard2,
+   .projectCard3,
+   .projectCard4,
+   .projectCard5,
+   .projectCard6 {
+      padding: 10px;
+      border-radius: 4px;
+   } 
+   
+}
