@@ -60,7 +60,7 @@ const Home = () => {
                       height="123"
                       viewBox="0 0 138 123"
                       fill="none"
-                      x="108" 
+                      x="108"
                       y="122"
                     >
                       <path
@@ -69,7 +69,6 @@ const Home = () => {
                       />
                     </svg>
                   </svg>
-
                 </div>
                 <svg
                   className={style.svg}

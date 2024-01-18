@@ -3,8 +3,6 @@ import styles from './ServicesList.module.scss';
 import gsap from 'gsap';
 
 const ServicesList = forwardRef(({ services }, ref) => {
-
-
   return (
     <li className={styles.service} ref={ref}>
       <div className={styles.service_id}>

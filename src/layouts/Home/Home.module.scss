@@ -1,30 +1,35 @@
 .root {
-  padding: 124px;
+  padding: clamp(50px, 5vw, 100px) 0;
 
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // height: clamp(100px, 150px, 350px);
     gap: 100px;
 
     .name {
       position: relative;
+
       .loadingPage {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 35px;
+
         .svgContainer {
           width: 150%;
           display: flex;
           align-items: center;
           gap: 15px;
+          // height: clamp(100px, 5vh, 350px);
+
           .svg {
             width: 33%;
             stroke: white;
             fill: #fff;
-            strokewidth: 1px;
+            stroke-width: 1px;
             stroke-dasharray: 4500;
             animation: draw 8s ease;
           }
@@ -34,6 +39,7 @@
               fill-opacity: 0;
               stroke-dashoffset: 4500;
             }
+
             100% {
               stroke-dashoffset: 0;
               fill-opacity: 1.5;
@@ -45,6 +51,7 @@
             width: 33%;
 
             height: 244px;
+
             .svg_middle {
               width: 100%;
               position: absolute;
@@ -54,14 +61,15 @@
               bottom: 0;
               stroke: white;
               fill: #fff;
-              strokewidth: 1px;
+              stroke-width: 1px;
               stroke-dasharray: 4500;
               animation: draw 8s ease;
             }
+
             .svg2 {
               stroke: #5065af;
               fill: #5065af;
-              strokewidth: 1px;
+              stroke-width: 1px;
               stroke-dasharray: 4500;
               animation: draw 8s ease;
             }
@@ -71,6 +79,7 @@
                 fill-opacity: 0;
                 stroke-dashoffset: 4500;
               }
+
               100% {
                 stroke-dashoffset: 0;
                 fill-opacity: 1.5;
@@ -81,15 +90,13 @@
       }
 
       .nameContainer {
-        height: 70px;
+        height: 100%;
         overflow: hidden;
-        width: 100%;
-        text-align: center;
         .team {
-          font-family: 'Gilroy-regular';
-          font-size: clamp(26px, 5vw, 63.437px);
+          font-family: 'Gilroy-Regular';
+          font-size: 63px;
           font-weight: 400;
-          letter-spacing: 88.177px;
+          letter-spacing: 88px;
           margin-right: -88px;
         }
       }
@@ -100,6 +107,7 @@
       flex-direction: column;
       align-items: center;
       gap: 40px;
+
       p {
         font-family: 'Gilroy-Medium';
         color: #dbdbdb;
@@ -137,12 +145,93 @@
           display: block;
           z-index: -1;
         }
+
         &:hover::before {
           width: 105%;
         }
 
         &:hover {
           color: #111;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .root {
+    .content {
+      .name {
+        .loadingPage {
+          gap: 15px;
+          .svgContainer {
+            width: 100%;
+            // height: 200px;
+          }
+        }
+        .nameContainer {
+          .team {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .root {
+    .content {
+      .name {
+        .loadingPage {
+          gap: 5px;
+          .svgContainer {
+            width: 80%;
+            height: 190px;
+
+          }
+        }
+        .nameContainer {
+          .team {
+            font-family: 'Gilroy-Regular';
+            font-size: 36px;
+            font-weight: 400;
+            letter-spacing: 60px;
+            margin-right: -60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 520px) {
+  .root {
+    .content {
+      .name {
+        .loadingPage {
+          gap: 5px;
+          .svgContainer {
+            width: 100%;
+            height: 170px;
+          }
+          .nameContainer {
+            .team {
+              letter-spacing: 20px;
+              margin-right: -20px;
+            }
+          }
+        }
+      }
+      .title {
+        gap: 20px;
+        p {
+          font-size: 14px;
+        }
+        button {
+          text-align: center;
+          font-size: 14px;
+          width: 80%;
+          padding: 8px 25px;
         }
       }
     }

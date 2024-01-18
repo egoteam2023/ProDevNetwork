@@ -6,11 +6,11 @@
     overflow: hidden;
     height: 80px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: clamp(25px, 3vw, 50px);
     .services_title {
       font-family: 'Gilroy-Medium';
       color: #fff;
-      font-size: 80px;
+      font-size: clamp(60px, 3vw, 80px);
       font-weight: 500;
       text-align: center;
       letter-spacing: 8px;
@@ -19,21 +19,21 @@
 
   .feetbackInnerFormWrap {
     font-family: 'Gilroy-Black';
-    width: 966px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 16px;
     border: 2px solid #fff;
-    padding: 42px 236px;
+    padding: clamp(20px, 3vw, 42px) clamp(100px, 10vw, 236px);
     background: #111;
 
     &__title {
       font-family: 'Gilroy-Black';
       color: #fff;
-      font-size: 40px;
+      font-size: clamp(24px, 3vw, 40px);
       font-weight: 900;
       letter-spacing: 4px;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: clamp(15px, 3vw, 30px);
     }
   }
 
@@ -45,7 +45,7 @@
       font-family: 'Gilroy-Regular';
       color: rgba(251, 51, 51, 0.633);
       font-size: 14px;
-      padding: 8px 0;
+      padding: clamp(4px, 3vw, 8px) 0;
     }
 
     .input_wrapper {

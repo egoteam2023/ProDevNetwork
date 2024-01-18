@@ -5,16 +5,13 @@
   gap: 20px;
 
   &_decore {
-    font-family: 'Gilroy-Medium';
     color: #ffffff1e;
     transform: rotate(-90deg);
     position: absolute;
-    left: -25%;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+    left: calc(-200px - 2%);
+    top: 385px;
     text-align: center;
-    font-size: 249.33px;
+    font-size: clamp(100px, 3vw, 249px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -23,16 +20,23 @@
 }
 
 .wrapper {
-  height: 90px;
+  height: 100%;
   overflow: hidden;
-  margin-bottom: 62px;
+  margin-bottom: clamp(20px, 5vw, 50px);
 }
 .services_title {
   color: #fff;
   text-align: center;
-  font-size: 80px;
+  font-size: clamp(28px, 5vw, 80px);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 8px;
+}
+@media (max-width: 640px) {
+  .services_list {
+    &_decore {
+      left: calc(-220px - 2%);
+    }
+  }
 }
