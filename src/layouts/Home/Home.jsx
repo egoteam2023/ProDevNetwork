@@ -43,31 +43,33 @@ const Home = () => {
                 </svg>
                 <div className={style.middleSvg}>
                   <svg
-                    className={style.svg}
+                    className={style.svg_middle}
                     xmlns="http://www.w3.org/2000/svg"
-                    width="138"
+                    width="245"
                     height="244"
-                    viewBox="0 0 138 244"
-                    fill="none"
+                    viewBox="0 0 245 244"
                   >
                     <path
                       d="M137.644 228.961L122.714 243.778L0.232422 121.867L47.5778 74.7424L68.7181 53.7444L101.662 20.9542L122.714 0V29.6778L101.662 50.6319L98.5346 53.7444L77.3943 74.7424L30.049 121.867L137.644 228.961Z"
                       fill="white"
                     />
+                    <svg
+                      className={style.svg2}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="138"
+                      height="123"
+                      viewBox="0 0 138 123"
+                      fill="none"
+                      x="108" 
+                      y="122"
+                    >
+                      <path
+                        d="M137.503 0.911133L116.451 21.8653L15.066 122.778L8.37165 116.115L0.135742 107.961L86.6346 21.8653H35.7659L14.7137 0.911133H137.503Z"
+                        fill="#5065AF"
+                      />
+                    </svg>
                   </svg>
-                  <svg
-                    className={style.svg2}
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="138"
-                    height="123"
-                    viewBox="0 0 138 123"
-                    fill="none"
-                  >
-                    <path
-                      d="M137.503 0.911133L116.451 21.8653L15.066 122.778L8.37165 116.115L0.135742 107.961L86.6346 21.8653H35.7659L14.7137 0.911133H137.503Z"
-                      fill="#5065AF"
-                    />
-                  </svg>
+
                 </div>
                 <svg
                   className={style.svg}

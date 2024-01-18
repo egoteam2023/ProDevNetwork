@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect } from 'react';
 import styles from './Header.module.scss';
 import logo from '../../assets/img/small-logo.svg';
 import gsap from 'gsap';

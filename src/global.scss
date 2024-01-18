@@ -135,30 +135,34 @@ h6 {
       format('svg'); /* Chrome < 4, Legacy iOS */
 }
 body {
+  font-family: 'Gilroy-Regular';
   background: #000;
   color: #fff;
 }
 
 [class*='__container'] {
-  max-width: 1400px;
+  max-width: 90%;
   margin: 0px auto;
   padding: 0 50px;
+  position: relative;
 }
 
 .wrapper {
   min-height: 100vh;
+  min-width: 100vw;
   background: url('./assets/img/bg.png') 0 0 / cover no-repeat;
 }
 
-[class*='__title'] {
-  h2 {
-    color: #fff;
-    font-family: 'Gilroy-Medium';
-    font-size: 80px;
-    font-weight: 500;
-    letter-spacing: 8px;
-  }
-}
+// [class*='__title'] {
+//   h2 {
+//     color: #fff;
+//     font-family: 'Gilroy-Medium';
+//     font-size: 80px;
+//     font-weight: 500;
+//     letter-spacing: 8px;
+//     text-align: center;
+//   }
+// }
 
 .br {
   height: 160px;

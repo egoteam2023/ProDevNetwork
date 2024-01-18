@@ -16,13 +16,15 @@
         justify-content: center;
         gap: 35px;
         .svgContainer {
+          width: 150%;
           display: flex;
           align-items: center;
           gap: 15px;
           .svg {
+            width: 33%;
             stroke: white;
             fill: #fff;
-            stroke-width: 1px;
+            strokewidth: 1px;
             stroke-dasharray: 4500;
             animation: draw 8s ease;
           }
@@ -39,13 +41,27 @@
           }
 
           .middleSvg {
+            position: relative;
+            width: 33%;
+
+            height: 244px;
+            .svg_middle {
+              width: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              stroke: white;
+              fill: #fff;
+              strokewidth: 1px;
+              stroke-dasharray: 4500;
+              animation: draw 8s ease;
+            }
             .svg2 {
-              position: relative;
-              z-index: -1;
-              margin: 0 0 -1px -30px;
               stroke: #5065af;
               fill: #5065af;
-              stroke-width: 1px;
+              strokewidth: 1px;
               stroke-dasharray: 4500;
               animation: draw 8s ease;
             }
@@ -67,10 +83,11 @@
       .nameContainer {
         height: 70px;
         overflow: hidden;
-
+        width: 100%;
+        text-align: center;
         .team {
           font-family: 'Gilroy-regular';
-          font-size: 63.437px;
+          font-size: clamp(26px, 5vw, 63.437px);
           font-weight: 400;
           letter-spacing: 88.177px;
           margin-right: -88px;

@@ -1,21 +1,31 @@
 .root {
   padding: 50px 0;
+
+  nav {
+    margin: 0 auto;
+  }
   ul {
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: center;
+    gap: clamp(30px, 5vw, 100px);
     li {
-      overflow: hidden;
-      height: 60px;
+      // display: flex;
+      // align-items: center;
+      // overflow: hidden;
+      // height: 60px;
     }
     li:first-child {
-      margin-right: 230px;
+      position: absolute;
+      left: 50px;
+      top: -10px;
+      // margin-right: clamp(100px, 10vw, 230px);
     }
   }
   a {
     font-family: 'Gilroy-Regular';
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     transition: 0.3s;
     letter-spacing: 2.4px;
     &:hover {

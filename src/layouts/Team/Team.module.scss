@@ -2,9 +2,9 @@
   padding: clamp(70px, 10vw, 150px) 0 clamp(40px, 10vw, 70px);
 
   &_title {
+    font-family: 'Gilroy-Medium';
     text-align: center;
     color: #fff;
-    font-family: Gilroy;
     font-size: 80px;
     font-weight: 500;
     letter-spacing: 8px;
@@ -13,15 +13,14 @@
 
   &_slider_block {
     position: relative;
-
     .team_decore {
+      font-family: 'Gilroy-Medium';
       display: flex;
       justify-content: center;
       width: 100%;
       top: -40%;
       position: absolute;
       color: #ffffff1e;
-      font-family: Gilroy;
       font-size: 283.33px;
       font-style: normal;
       font-weight: 500;
@@ -32,38 +31,116 @@
 
   &_slide {
     height: 40%;
-    display: flex;
     color: #fff;
-    gap: 15px;
-
-    .team_image {
-      object-fit: cover;
-      width: 40%;
-      border-radius: 25px;
-      background: #111;
-    }
-
-    .team_info {
+    .slide_wrapper {
       display: flex;
-      flex-direction: column;
+      align-items: center;
       gap: 30px;
-      justify-content: center;
-      padding: 20px clamp(20px, 5vw, 60px) 20px clamp(30px, 5vw, 100px);
-      width: 60%;
-      border-radius: 25px;
-      background: #111;
-      font-family: 'Gilroy-regular';
-      &_name {
-        font-size: clamp(20px, 5vw, 26px);
+      .image_wrapper {
+        flex: 4;
+        border-radius: 25px;
+        overflow: hidden;
+        height: 460px;
+        position: relative;
+        &:hover {
+          .image_content {
+            transform: scale(1);
+            padding: 10px;
+            width: 100%;
+          }
+        }
+        .team_image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .image_content {
+          position: absolute;
+          z-index: 3;
+          bottom: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          transform: scale(0);
+          transition: 0.5s;
+          background: #00000044;
+          p {
+            font-family: 'Gilroy-Medium';
+            position: relative;
+            color: #fff;
+            font-weight: 500;
+            line-height: 1em;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px 0;
+            span {
+              font-weight: 300;
+              font-size: 0.7em;
+            }
+          }
+
+          .sci {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 5px;
+            li {
+              a {
+                position: relative;
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.5);
+                fill: currentColor;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                transition: 0.5s;
+                &:hover {
+                  fill: currentColor;
+                  color: rgba(255, 255, 255, 1);
+                }
+              }
+            }
+          }
+        }
       }
 
-      &_about {
-        font-size: clamp(14px, 5vw, 18px);
-      }
+      .team_info {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        padding: 20px clamp(20px, 5vw, 60px) 20px clamp(30px, 5vw, 100px);
+        width: 100%;
+        height: 460px;
+        border-radius: 25px;
+        background: #111;
 
-      &_specialize {
-        font-weight: 700;
-        font-size: clamp(16px, 3vw, 20px);
+        &_name {
+          font-family: 'Gilroy-Medium';
+          font-size: clamp(20px, 5vw, 26px);
+        }
+
+        &_about {
+          font-family: 'Gilroy-Regular';
+          font-size: clamp(14px, 5vw, 18px);
+        }
+
+        &_specialize {
+          font-family: 'Gilroy-Medium';
+          font-weight: 700;
+          font-size: clamp(16px, 3vw, 20px);
+        }
       }
     }
   }

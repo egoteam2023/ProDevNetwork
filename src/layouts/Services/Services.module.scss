@@ -5,15 +5,15 @@
   gap: 20px;
 
   &_decore {
+    font-family: 'Gilroy-Medium';
     color: #ffffff1e;
     transform: rotate(-90deg);
     position: absolute;
-    left: -30%;
+    left: -25%;
     top: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-family: Gilroy;
     font-size: 249.33px;
     font-style: normal;
     font-weight: 500;
@@ -23,14 +23,13 @@
 }
 
 .wrapper {
-  height: 100px;
+  height: 90px;
   overflow: hidden;
   margin-bottom: 62px;
 }
 .services_title {
   color: #fff;
   text-align: center;
-  font-family: Gilroy;
   font-size: 80px;
   font-style: normal;
   font-weight: 500;
