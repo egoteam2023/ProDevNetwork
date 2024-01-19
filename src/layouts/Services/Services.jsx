@@ -64,14 +64,13 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="services__container">
+    <div className="services__container" id="services">
       <div className={styles.wrapper}>
         <h2 className={styles.services_title} ref={titleRef}>
           услуги
         </h2>
       </div>
       <ul className={styles.services_list}>
-        <p className={styles.services_list_decore}>услуги</p>
         {services.map((s, index) => {
           const ref = useRef(null);
 

@@ -3,20 +3,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  &_decore {
-    color: #ffffff1e;
-    transform: rotate(-90deg);
-    position: absolute;
-    left: calc(-200px - 2%);
-    top: 385px;
-    text-align: center;
-    font-size: clamp(100px, 3vw, 249px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 24.933px;
-  }
 }
 
 .wrapper {
@@ -25,18 +11,9 @@
   margin-bottom: clamp(20px, 5vw, 50px);
 }
 .services_title {
+  font-family: 'Gilroy-Medium';
   color: #fff;
   text-align: center;
-  font-size: clamp(28px, 5vw, 80px);
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-size: clamp(48px, 5vw, 80px);
   letter-spacing: 8px;
-}
-@media (max-width: 640px) {
-  .services_list {
-    &_decore {
-      left: calc(-220px - 2%);
-    }
-  }
 }

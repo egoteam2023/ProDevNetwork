@@ -5,12 +5,12 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-
+ 
 const Team = () => {
   const team = [
     {
       image: 'https://i.ibb.co/X4SjtYq/gojo.jpg',
-      name: 'Кашкаралиев Данияр',
+      name: 'Данияр Кашкаралиев',
       nickname: 'drtya',
       position: 'Frontend developer',
       about:
@@ -74,7 +74,7 @@ const Team = () => {
       nickname: 'Nero',
       position: 'Проект менеджер&Графический дизайнер',
       about:
-        'Проект менеджер&Графический дизайнер с опытом более 3 лет, полное брендирование, упаковка продукта, разработка логотипов и брендбуков, гайдлайнов, разработка постеров. Проекты: Креативное комьюнити «unmode», брендбуки “Hydra group”, «ШТАБ», «Ak keme» и др., также разработка логотипов (ledwaim, Бизнес Рамп, rossse и др)',
+        'Проект менеджер&Графический дизайнер с опытом более 3 лет, полное брендирование, упаковка продукта, разработка логотипов и брендбуков, гайдлайнов, разработка постеров. Проекты: Креативное комьюнити «unmode», брендбуки “Hydra group”, «ШТАБ», «Ak keme» и др., также разработка логотипов',
       specialize: 'adobe family, corel draw, figma, midjourney',
       socialLinks: {
         instagram:
@@ -138,14 +138,9 @@ const Team = () => {
     });
     timeline
       .fromTo(
-        `.${styles.team_decore}`,
-        { opacity: 0, color: '#fff' },
-        { duration: 1.5, opacity: 1, color: '#ffffff1e' },
-      )
-      .fromTo(
         `.${styles.team_title}`,
         { opacity: 0, y: 30 },
-        { duration: 1, opacity: 1, delay: 0.3 },
+        { duration: 1, opacity: 1, delay: 0.3, y: 0 },
       )
       .fromTo(
         `.${styles.team_slide}`,
@@ -164,7 +159,6 @@ const Team = () => {
           команда
         </h2>
         <div className={styles.team_slider_block}>
-          <p className={styles.team_decore}>команда</p>
           <Slider {...settings}>
             {team.map((el, index) => (
               <div className={styles.team_slide} ref={ref} key={index}>

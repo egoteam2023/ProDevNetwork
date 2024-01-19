@@ -1,7 +1,7 @@
 .root {
   padding: 40px 0;
 
-  .header_wrapper {
+  .footer_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,8 +39,8 @@
     left: 0;
     top: 0;
     z-index: 1;
-    // opacity: 0; // Начальное значение нулевое
-    // transition: opacity 0.5s ease;
+    opacity: 0; // Начальное значение нулевое
+    transition: opacity 0.5s ease;
 
     .modal_nav {
       position: absolute;
@@ -77,6 +77,9 @@
   .burger__wrapper {
     display: none;
   }
+  .arrow_up {
+    display: none;
+  }
 }
 
 @media (max-width: 760px) {
@@ -84,8 +87,19 @@
     .navigate {
       display: none;
     }
+
     .box {
       display: none;
+    }
+
+    .arrow_up {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      border: 1px solid #fff;
+      border-radius: 7px;
+      background: #fff;
     }
 
     .burger__wrapper {

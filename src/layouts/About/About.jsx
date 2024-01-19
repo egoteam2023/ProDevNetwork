@@ -17,11 +17,6 @@ const About = () => {
     });
     timeline
       .fromTo(
-        `.${styles.bg_decore}`,
-        { opacity: 0, color: '#fff' },
-        { duration: 1.5, opacity: 1, color: '#ffffff1e' },
-      )
-      .fromTo(
         `.${styles.about_title}`,
         { opacity: 0, y: 30 },
         { duration: 1, opacity: 1, delay: 0.3 },
@@ -30,13 +25,12 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about__container">
+    <div className="about__container" id="about">
       <div className={styles.about}>
         <h3 className={styles.about_title} ref={baDecore}>
           о нас
         </h3>
         <div style={{ position: 'relative' }}>
-          <p className={styles.bg_decore}>о нас</p>
           <p className={styles.about_descr}>
             · Амбиции и Рост. Мы гордимся своими амбициями и стремлением к постоянному
             профессиональному росту. Даже будучи новичками, мы нацелены на достижение выдающихся

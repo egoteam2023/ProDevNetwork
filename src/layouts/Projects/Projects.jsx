@@ -130,7 +130,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="cases">
       <div className="projects__container">
         <div className={styles.content}>
           <div className={styles.title__wrapper}>

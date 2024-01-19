@@ -10,7 +10,7 @@
     .services_title {
       font-family: 'Gilroy-Medium';
       color: #fff;
-      font-size: clamp(60px, 3vw, 80px);
+      font-size: clamp(48px, 3vw, 80px);
       font-weight: 500;
       text-align: center;
       letter-spacing: 8px;
@@ -23,13 +23,25 @@
     margin: 0 auto;
     border-radius: 16px;
     border: 2px solid #fff;
-    padding: clamp(20px, 3vw, 42px) clamp(100px, 10vw, 236px);
+    padding: 42px 236px;
     background: #111;
 
+    @media (max-width: 1100px) {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+    @media (max-width: 760px) {
+      padding-left: 90px;
+      padding-right: 90px;
+    }
+    @media (max-width: 620px) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
     &__title {
       font-family: 'Gilroy-Black';
       color: #fff;
-      font-size: clamp(24px, 3vw, 40px);
+      font-size: clamp(20px, 3vw, 40px);
       font-weight: 900;
       letter-spacing: 4px;
       text-align: center;
@@ -40,11 +52,12 @@
   &__Form {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: clamp(15px, 3vh, 35px);
+
     .error {
       font-family: 'Gilroy-Regular';
       color: rgba(251, 51, 51, 0.633);
-      font-size: 14px;
+      font-size: clamp(10px, 3vw, 14px);
       padding: clamp(4px, 3vw, 8px) 0;
     }
 
@@ -55,12 +68,12 @@
     &_name,
     &_phone {
       font-family: 'Gilroy-Regular';
-      padding: 14px 18px;
+      padding: 14px clamp(5px, 3vw, 18px);
       border-radius: 8px;
       border: 2px solid #fff;
       color: #b7b7b7;
       background: #111;
-      font-size: 18px;
+      font-size: clamp(12px, 3vw, 18px);
     }
 
     &_agree {
@@ -76,7 +89,7 @@
       align-items: center;
       gap: 8px;
       color: #b7b7b7;
-      font-size: 12px;
+      font-size: clamp(10px, 3vw, 12px);
       font-weight: 400;
     }
 
@@ -94,14 +107,17 @@
       background: #fff;
       color: #2b2b2b;
       font-size: 20px;
-      font-weight: 600;
       letter-spacing: 2px;
+      @media (max-width: 620px) {
+        height: 40px;
+        font-size: 16px;
+      }
     }
 
     &_label {
       color: #fff;
       font-family: 'Gilroy-Medium';
-      font-size: 20px;
+      font-size: clamp(14px, 3vw, 20px);
       font-weight: 500;
       letter-spacing: 2px;
       margin-bottom: 8px;

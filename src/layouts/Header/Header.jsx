@@ -4,14 +4,18 @@ import logo from '../../assets/img/small-logo.svg';
 import gsap from 'gsap';
 const Header = () => {
   const [burger, setBurger] = useState(false);
-  const openBurgerHandler = (e) => {
-    e.preventDefault();
+  const [isChecked, setIsChecked] = useState(false);
+
+  const openMenu = () => {
     setBurger(true);
+    setIsChecked(true);
   };
-  const CloseModalWindow = (e) => {
-    e.preventDefault();
+
+  const closeMenu = () => {
     setBurger(false);
+    setIsChecked(false);
   };
+
   useLayoutEffect(() => {
     gsap.fromTo(
       `.${styles.a}`,
@@ -30,65 +34,75 @@ const Header = () => {
   return (
     <header className={styles.root}>
       <div className="header__container">
-        <div className={styles.logo}>
-          <a className="a" href="#logo">
-            <img src={logo} alt="logo" />
-          </a>
-        </div>
-        <nav>
-          {burger && (
-            <div className={styles.modal_window} onClick={(e) => CloseModalWindow(e)}>
-              <ul className={styles.modal_nav} onClick={(e) => e.stopPropagation()}>
-                <li className={styles.modal_nav_li}>
-                  <a className={styles.modal_nav_a} href="#about">
-                    о нас
-                  </a>
-                </li>
-                <li className={styles.modal_nav_li}>
-                  <a className={styles.modal_nav_a} href="#services">
-                    услуги
-                  </a>
-                </li>
-                <li className={styles.modal_nav_li}>
-                  <a className={styles.modal_nav_a} href="#cases">
-                    кейсы
-                  </a>
-                </li>
-                <li className={styles.modal_nav_li}>
-                  <a className={styles.modal_nav_a} href="#contacts">
-                    контакты
-                  </a>
-                </li>
-              </ul>
-              <div className={styles.modal_overlay}></div>
-            </div>
-          )}
-          <div className={styles.burger} onClick={(e) => openBurgerHandler(e)}>
-            <div className={styles.burger_line}></div>
+        <div className={styles.header_wrapper}>
+          <div className={styles.logo}>
+            <a className="a" href="#logo">
+              <img src={logo} alt="logo" />
+            </a>
           </div>
-          <ul className={styles.navigate}>
-            <li className={styles.li}>
-              <a className={styles.a} href="#about">
-                о нас
-              </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.a} href="#services">
-                услуги
-              </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.a} href="#cases">
-                кейсы
-              </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.a} href="#contacts">
-                контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <nav>
+            {burger && (
+              <div className={styles.modal_window} onClick={() => closeMenu()}>
+                <ul className={styles.modal_nav} onClick={(e) => e.stopPropagation()}>
+                  <li className={styles.modal_nav_li}>
+                    <a className={styles.modal_nav_a} href="#about">
+                      о нас
+                    </a>
+                  </li>
+                  <li className={styles.modal_nav_li}>
+                    <a className={styles.modal_nav_a} href="#services">
+                      услуги
+                    </a>
+                  </li>
+                  <li className={styles.modal_nav_li}>
+                    <a className={styles.modal_nav_a} href="#cases">
+                      кейсы
+                    </a>
+                  </li>
+                  <li className={styles.modal_nav_li}>
+                    <a className={styles.modal_nav_a} href="#contacts">
+                      контакты
+                    </a>
+                  </li>
+                </ul>
+                <div className={styles.modal_overlay}></div>
+              </div>
+            )}
+            <div className={styles.burger__wrapper} onClick={() => openMenu()}>
+              <div id="webapp_cover">
+                <div id="menu_button">
+                  <input type="checkbox" id="menu_checkbox" checked={isChecked} />
+                  <label for="menu_checkbox" id="menu_label">
+                    <div id="menu_text_bar"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <ul className={styles.navigate}>
+              <li className={styles.li}>
+                <a className={styles.a} href="#about">
+                  о нас
+                </a>
+              </li>
+              <li className={styles.li}>
+                <a className={styles.a} href="#services">
+                  услуги
+                </a>
+              </li>
+              <li className={styles.li}>
+                <a className={styles.a} href="#cases">
+                  кейсы
+                </a>
+              </li>
+              <li className={styles.li}>
+                <a className={styles.a} href="#contacts">
+                  контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className={styles.box}></div>
+        </div>
       </div>
     </header>
   );

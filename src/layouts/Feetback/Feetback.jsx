@@ -90,7 +90,7 @@ const Feetback = () => {
   });
 
   return (
-    <div className="feetback__container">
+    <div className="feetback__container" id="contacts">
       <div className={styles.feetbackInner}>
         <div className={styles.wrapper}>
           <h2 className={styles.services_title}>Контакты</h2>
