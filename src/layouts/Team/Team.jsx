@@ -5,11 +5,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
- 
+
 const Team = () => {
   const team = [
     {
-      image: 'https://i.ibb.co/X4SjtYq/gojo.jpg',
+      image: 'https://i.ibb.co/TLKNXD9/image.png',
       name: 'Данияр Кашкаралиев',
       nickname: 'drtya',
       position: 'Frontend developer',
@@ -24,7 +24,7 @@ const Team = () => {
       },
     },
     {
-      image: 'https://i.ibb.co/8zVzxyv/blue-lock.jpg',
+      image: 'https://i.ibb.co/7bttgk4/image.png',
       name: 'Бекназар Бекмурзаев (Сооснователь)',
       nickname: 'escapch',
       position: 'Frontend developer',
@@ -39,8 +39,8 @@ const Team = () => {
       },
     },
     {
-      image: 'https://i.ibb.co/X4SjtYq/gojo.jpg',
-      name: 'Актан',
+      image: 'https://i.ibb.co/hgD4nt2/image.png',
+      name: 'Актан Айтакунов',
       nickname: 'Актан',
       position: 'UI UX designer',
       about:
@@ -54,7 +54,7 @@ const Team = () => {
       },
     },
     {
-      image: 'https://i.ibb.co/8zVzxyv/blue-lock.jpg',
+      image: 'https://i.ibb.co/Nxv2Y9V/Eldiar.png',
       name: 'Элдияр Долбеков',
       nickname: 'eldiyarchess',
       position: 'Frontend Developer',
@@ -69,12 +69,11 @@ const Team = () => {
       },
     },
     {
-      image: 'https://i.ibb.co/8zVzxyv/blue-lock.jpg',
+      image: 'https://i.ibb.co/y4LHK5Z/image.png',
       name: 'Беслан Адилбеков (Сооснователь)',
       nickname: 'Nero',
       position: 'Проект менеджер&Графический дизайнер',
-      about:
-        'Проект менеджер&Графический дизайнер с опытом более 3 лет, полное брендирование, упаковка продукта, разработка логотипов и брендбуков, гайдлайнов, разработка постеров. Проекты: Креативное комьюнити «unmode», брендбуки “Hydra group”, «ШТАБ», «Ak keme» и др., также разработка логотипов',
+      about: 'Проект менеджер&Графический дизайнер (с опытом более 3х лет) «unmode»',
       specialize: 'adobe family, corel draw, figma, midjourney',
       socialLinks: {
         instagram:
@@ -85,7 +84,7 @@ const Team = () => {
       },
     },
     {
-      image: 'https://i.ibb.co/8zVzxyv/blue-lock.jpg',
+      image: 'https://i.ibb.co/rb6XQnJ/image.png',
       name: 'Канай Раимкулов',
       nickname: 'Канай',
       position: 'Backend Developer',

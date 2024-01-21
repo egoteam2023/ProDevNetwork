@@ -1,8 +1,7 @@
 const ProjectsList = [
   {
     id: 1,
-    projectScreen:
-      'https://templatetoaster.com/wp-content/uploads/2019/07/Pizza-Online-Store-OpenCart-Theme-1000x1269.jpg',
+    projectScreen: 'https://i.ibb.co/W3gGpym/image-2024-01-21-22-28-02.png',
     defaultProjectScreen:
       'https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg',
     title: 'pizza',
