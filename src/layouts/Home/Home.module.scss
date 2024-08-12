@@ -132,6 +132,9 @@
         transition: 0.5s;
         z-index: 1;
 
+        a {
+          color: #fff;
+        }
         &:before {
           content: '';
           width: 0;
@@ -151,7 +154,9 @@
         }
 
         &:hover {
-          color: #111;
+          a {
+            color: #111;
+          }
         }
       }
     }
@@ -188,7 +193,6 @@
           .svgContainer {
             width: 80%;
             height: 190px;
-
           }
         }
         .nameContainer {
