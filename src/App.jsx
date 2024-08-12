@@ -1,5 +1,5 @@
 import About from './layouts/About';
-import Feetback from './layouts/Feetback';
+import Feetback from './layouts/Feedback';
 import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import Home from './layouts/Home';

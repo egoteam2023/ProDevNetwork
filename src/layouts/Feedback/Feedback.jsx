@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react';
-import styles from './Feetback.module.scss';
+import styles from './Feedback.module.scss';
 import { useFormik } from 'formik';
 import InputMask from 'react-input-mask';
 import * as Yup from 'yup';
@@ -9,7 +9,7 @@ import { ScrollTrigger } from 'gsap/all';
 import loadingSvg from '../../assets/icons/Loading.svg';
 import gsap from 'gsap';
 
-const Feetback = () => {
+const Feedback = () => {
   const [loading, setLoading] = useState(false);
   gsap.registerPlugin(ScrollTrigger);
 
@@ -118,7 +118,7 @@ const Feetback = () => {
                 Номер телефона:
               </label>
               <InputMask
-                mask="+0(999) 99-99-99"
+                mask="0(999) 99-99-99"
                 id="phone"
                 name="tel"
                 placeholder="Введите ваш номер телефона"
@@ -160,4 +160,4 @@ const Feetback = () => {
   );
 };
 
-export default Feetback;
+export default Feedback;
