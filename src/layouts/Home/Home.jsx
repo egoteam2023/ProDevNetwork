@@ -97,7 +97,7 @@ const Home = () => {
               и создания приложений.
             </p>
             <button>
-              <a href="#contacts" >бесплатная консультация</a>
+              <a href="#contacts">бесплатная консультация</a>
             </button>
           </div>
         </div>
