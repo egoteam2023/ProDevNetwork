@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /*Обнуление*/
 * {
   padding: 0;
@@ -143,7 +146,7 @@ body {
 [class*='__container'] {
   max-width: 90%;
   margin: 0px auto;
-  padding: 0 50px; 
+  padding: 0 50px;
   position: relative;
 
   @media (max-width: 760px) {

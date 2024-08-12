@@ -3,10 +3,10 @@ import Feetback from './layouts/Feetback';
 import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import Home from './layouts/Home';
-import Projects from './layouts/Projects';
 import Services from './layouts/Services';
 import Team from './layouts/Team';
 import './global.scss';
+import Cases from './layouts/Cases/Cases';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <div className="br"></div>
         <Services />
         <div className="br"></div>
-        <Projects />
+        <Cases />
         <div className="br"></div>
         <Feetback />
         <div className="br"></div>
